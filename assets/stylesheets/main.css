@@ -56,6 +56,9 @@ body {
 	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-image: url("../../assets/images/drone.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: radial-gradient(red, yellow); */
+
 }
 
 .main-list {
