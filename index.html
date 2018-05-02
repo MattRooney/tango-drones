@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="em">
+  <head>
+    <meta charset="utf-8">
+    <title>Tango Drones</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,100,300' type='text/css'>
+  </head>
+  <body>
+    <header class="primary-nav container group">
+      <h1 class="logo">
+        <a id='primary-header' onclick="noFocus()">Tango Drones</a>
+      </h1>
+      <div class='nav nav-options'>
+        <a id='shop' onclick="focus('shop')">Shop</a>
+        <a id="about" onclick="focus('about')">About</a>
+        <a id='contact' onclick="focus('contact')">Contact</a>
+      </div>
+      </div class='nav-options'>
+    </header>
+    <section class="hero container">
+      <ul class="main-list">
+        <li>
+          <section id='home-blurb' class="hero blurb">
+            <h5>Welcome!</h5>
+          </section>
+        </li>
+
+        <li>
+          <section id='shop-blurb' class="hero blurb">
+            <h5>Online Ordering Coming Soon!</h5>
+            <h4>In the meantime, find our product list below and send an email to
+              <a class="" href="mailto:sales@tango-drones.com?Subject=TangoOrders" target="_top">
+                sales@tango-drones.com</a>
+            </h4>
+            <p>List of things</p>
+          </section>
+        </li>
+
+        <li>
+          <section id='contact-blurb' class="hero blurb">
+            <p>Get in touch at <a class=""
+                                  href="mailto:sales@tango-drones.com?Subject=TangoOrders"
+                                  target="_top">sales@tango-drones.com</a>
+            </p>
+          </section>
+        </li>
+
+        <li>
+          <section id='about-blurb' class='hero blurb'>
+            <p>Drone parts for old farts.</p>
+          </section>
+        </li>
+      </ul>
+    </section>
+    <footer class="primary-footer container group">
+      <nav class="nav">
+        <ul>
+          <li><a class="btn" href="mailto:matthewjrooney@gmail.com?Subject=TangoInfo" target="_top">EMAIL</a></li>
+        </ul>
+        <li><a class="btn small-print" href="https://github.com/MattRooney">Built By Roondoggle Industries.</a></li>
+      </nav>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        document.getElementById("shop").addEventListener('click', function(){
+          focus("#shop");
+        });
+        document.getElementById("contact").addEventListener('click', function(){
+          focus("#contact");
+        });
+        document.getElementById("about").addEventListener('click', function(){
+          focus("#about");
+        });
+        noFocus();
+      });
+
+      function noFocus() {
+        var divs = ["#shop", "#contact", "#about"]
+        divs.forEach(function(div) {
+          $("" + div + "-blurb").hide();
+        })
+        $("#home-blurb").show("fast");
+      };
+
+      function focus(focus) {
+        var divs = ["#home", "#shop", "#contact", "#about"]
+        $("" + focus + "-blurb").show("fast");
+        divs.forEach(function(div) {
+          if (div != focus) { $("" + div + "-blurb").hide(); }
+        })
+      };
+    </script>
+  </body>
+</html>
