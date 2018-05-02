@@ -54,7 +54,7 @@ table {
 */
 body {
 	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: url("../../assets/images/drone.jpg");
+  background-image: url("../../assets/images/trees.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-image: radial-gradient(red, yellow); */
@@ -68,6 +68,8 @@ body {
 
 .blurb {
 	display: none;
+  background: rgb(000, 000, 000); /* Fallback for older browsers without RGBA-support */
+  background: rgba(000, 000, 000, 0.5);
 }
 
 .small-round-pic {
@@ -191,6 +193,9 @@ cite, em {
 
 .small-print {
   font-size: 8px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 /*
 	=====================
@@ -232,12 +237,13 @@ a {
 	text-align: center;
 }
 .logo {
+  font-family: 'Archivo Black', sans-serif;
 	display: inline-block;
 	padding: 20px;
 	font-size: 55px;
 	font-weight: 300;
 	line-height: 60px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin: auto;
 	cursor: pointer;
   color: white;
@@ -248,7 +254,7 @@ a {
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: .5px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	padding-top: 5px;
 }
 
@@ -263,8 +269,15 @@ a {
 	padding-bottom: 44px;
 	padding-top: 44px;
 	text-align: center;
+  font-weight: bold;
+  position: relative;
+  width:300px;
+  height:300px;
+  bottom:0px;
+  right:25%;
+  left:50%;
+  margin-left:-150px;
 }
-
 /*
 	=============================
 	NAVIGATION
