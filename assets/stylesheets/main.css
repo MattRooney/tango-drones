@@ -54,7 +54,7 @@ table {
 */
 body {
 	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-image: url("../../assets/images/trees.jpg");
+  background-image: url("../../assets/images/drone.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-image: radial-gradient(red, yellow); */
@@ -68,6 +68,9 @@ body {
 
 .blurb {
 	display: none;
+}
+
+#shop-blurb {
   background: rgb(000, 000, 000); /* Fallback for older browsers without RGBA-support */
   background: rgba(000, 000, 000, 0.5);
 }
@@ -219,7 +222,7 @@ cite, em {
 */
 
 a:hover {
-	color: #a9b2b9;
+	color: black;
 }
 
 a {
@@ -346,4 +349,25 @@ a {
 
 .btn img:hover {
 	opacity: 0.5;
+}
+
+/*
+  ===============================
+  Table
+  ===============================
+ */
+.table-header {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+}
+th {
+  padding: 0px 18px 0px 18px;
+}
+.table-body {
+  font-size: 14px;
+  padding: 5px;
+}
+.full-item {
+  width: 211px;
 }
