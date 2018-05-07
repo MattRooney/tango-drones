@@ -12,8 +12,7 @@
         <a id='primary-header' href="index.html">TANGO DRONES</a>
       </h1>
       <div class='nav nav-options'>
-        <!-- <a id="shop" onclick="focus('shop')">Products</a> -->
-        <a id="shop" href="products.html">Products</a>
+        <a id="shop" onclick="focus('shop')">Product List</a>
         <a id="order" onclick="focus('order')">Order</a>
         <a id="contact" onclick="focus('contact')">Contact</a>
       </div>
@@ -22,54 +21,73 @@
     <section class="hero container">
       <ul class="main-list">
         <li>
-          <section id='home-blurb' class="hero blurb">
-            <!-- <h3>Welcome to Tango Drones</h3> -->
-            <h5>Your source for affordable high performance drones for professional and hobby use.</h5>
-          </section>
-        </li>
-
-        <li>
           <section id='shop-blurb' class="hero blurb">
             <h5 class='blurb-title'>Online Ordering Coming Soon!</h5>
             <h4 class="blurb-text">In the meantime, find our product list below. Order via email to
               <a style="font-weight: bold;" href="mailto:sales@tango-drones.com?Subject=TangoOrders" target="_top">
                 sales@tango-drones.com</a>
             </h4>
-            <table>
-              <thead class='table-header'>
-                <tr>
-                  <th>Voltage (S)</th>
-                  <th>Current Rating (C)</th>
-                  <th>Capacity (mAh)</th>
-                  <th class="full-item">Full Item #</th>
-                  <th>Minimum Advertised Price (USD)</th>
-                  <th>Listed Price (USD)</th>
-                </tr>
-              </thead>
-              <tbody class='table-body'>
-                <tr><td>4</td><td>15</td><td>5200</td><td>TA-15C-5200-4S1P-XT60</td><td>$47.19</td><td>$47.19</td></tr>
-                <tr><td>6</td><td>15</td><td>7000</td><td>TA-15C-7000-6S1P</td><td>$79.99</td><td>$79.99</td></tr>
-                <tr><td>6</td><td>15</td><td>8000</td><td>TA-15C-8000-6S1P-XT60</td><td>$141.98</td><td>$141.98</td></tr>
-                <tr><td>6</td><td>15</td><td>12000</td><td>TA-PLUS-15C-12000-6S1P-AS150</td><td>$263.99</td><td>$263.99</td></tr>
-                <tr><td>6</td><td>15</td><td>12000</td><td>TA-15C-12000-6S1P-XT90</td><td>$260.63</td><td>$260.63</td></tr>
-                <tr><td>6</td><td>15</td><td>12000</td><td>TA-15C-12000-6S1P-AS150</td><td>$260.63</td><td>$260.63</td></tr>
-                <tr><td>6</td><td>15</td><td>12000</td><td>TA-15C-12000-6S1P-EC5</td><td>$260.63</td><td>$260.63</td></tr>
-                <tr><td>6</td><td>15</td><td>12000</td><td>TA-PLUS-15C-12000-6S1P-EC5</td><td>$263.99</td><td>$263.99</td></tr>
-                <tr><td>4</td><td>15</td><td>16000</td><td>TA-15C-16000-4S1P</td><td>$231.67</td><td>$231.67</td></tr>
-                <tr><td>6</td><td>15</td><td>16000</td><td>TA-PLUS-15C-16000-6S1P-AS150</td><td>$339.99</td><td>$339.99</td></tr>
-                <tr><td>6</td><td>15</td><td>16000</td><td>TA-15C-16000-6S1P-EC5</td><td>$325.79</td><td>$325.79</td></tr>
-                <tr><td>6</td><td>15</td><td>16000</td><td>TA-15C-16000-6S1P-AS150</td><td>$325.79</td><td>$325.79</td></tr>
-                <tr><td>4</td><td>25</td><td>1000</td><td>TA-25C-10000-4S1P</td><td>$149.99</td><td>$149.99</td></tr>
-                <tr><td>4</td><td>25</td><td>6750</td><td>TA-25C-6750-4S1P-XT90</td><td>$99.00</td><td>$99.00</td></tr>
-                <tr><td>6</td><td>25</td><td>9000</td><td>TA-25C-9000-6S1P</td><td>$205.62</td><td>$205.62</td></tr>
-                <tr><td>6</td><td>25</td><td>10000</td><td>TA-25C-10000-6S1P-AS150</td><td>$210.00</td><td>$210.00</td></tr>
-                <tr><td>4</td><td>25</td><td>22000</td><td>TA-25C-22000-4S1P</td><td>$343.89</td><td>$343.89</td></tr>
-                <tr><td>6</td><td>25</td><td>22000</td><td>TA-PLUS-25C-22000-6S1P-AS150</td><td>$461.89</td><td>$461.89</td></tr>
-                <tr><td>6</td><td>25</td><td>22000</td><td>TA-25C-22000-6S1P-AS150</td><td>$461.89</td><td>$461.89</td></tr>
-                <tr><td>6</td><td>35</td><td>6000</td><td>TA-35C-6000-6S1P-XT60</td><td>$129.99</td><td>$129.99</td></tr>
-                <tr><td>4</td><td>35</td><td>6600</td><td>TA-35C-6600-4S2P-XT60</td><td>$95.00</td><td>$95.00</td></tr>
-              </tbody>
-            </table>
+            <span>
+            <btn class="category-btn"><a style="font-weight: bold;" onclick="category('#tangoDrones')">TANGO DRONES</a></btn>
+            <btn class="category-btn"><a style="font-weight: bold;" onclick="category('#batteries')">BATTERIES</a></btn>
+            <btn class="category-btn"><a style="font-weight: bold;" onclick="category('#motors')">MOTORS</a></btn>
+            <btn class="category-btn"><a style="font-weight: bold;" onclick="category('#escs')">ESCS</a></btn>
+            <btn class="category-btn"><a style="font-weight: bold;" onclick="category('#propellers')">PROPELLERS</a></btn>
+            </span>
+            <div id="tangoDrones">
+              <h5>TANGO DRONES</h5>
+              <p>Coming Soon!</p>
+            </div>
+            <div id="batteries">
+              <h5>BATTERIES</h5>
+              <table>
+                <thead class='table-header'>
+                  <tr>
+                    <th>Voltage (S)</th>
+                    <th>Current Rating (C)</th>
+                    <th>Capacity (mAh)</th>
+                    <th class="full-item">Full Item #</th>
+                    <th>Minimum Advertised Price (USD)</th>
+                    <th>Listed Price (USD)</th>
+                  </tr>
+                </thead>
+                <tbody class='table-body'>
+                  <tr><td>4</td><td>15</td><td>5200</td><td>TA-15C-5200-4S1P-XT60</td><td>$47.19</td><td>$47.19</td></tr>
+                  <tr><td>6</td><td>15</td><td>7000</td><td>TA-15C-7000-6S1P</td><td>$79.99</td><td>$79.99</td></tr>
+                  <tr><td>6</td><td>15</td><td>8000</td><td>TA-15C-8000-6S1P-XT60</td><td>$141.98</td><td>$141.98</td></tr>
+                  <tr><td>6</td><td>15</td><td>12000</td><td>TA-PLUS-15C-12000-6S1P-AS150</td><td>$263.99</td><td>$263.99</td></tr>
+                  <tr><td>6</td><td>15</td><td>12000</td><td>TA-15C-12000-6S1P-XT90</td><td>$260.63</td><td>$260.63</td></tr>
+                  <tr><td>6</td><td>15</td><td>12000</td><td>TA-15C-12000-6S1P-AS150</td><td>$260.63</td><td>$260.63</td></tr>
+                  <tr><td>6</td><td>15</td><td>12000</td><td>TA-15C-12000-6S1P-EC5</td><td>$260.63</td><td>$260.63</td></tr>
+                  <tr><td>6</td><td>15</td><td>12000</td><td>TA-PLUS-15C-12000-6S1P-EC5</td><td>$263.99</td><td>$263.99</td></tr>
+                  <tr><td>4</td><td>15</td><td>16000</td><td>TA-15C-16000-4S1P</td><td>$231.67</td><td>$231.67</td></tr>
+                  <tr><td>6</td><td>15</td><td>16000</td><td>TA-PLUS-15C-16000-6S1P-AS150</td><td>$339.99</td><td>$339.99</td></tr>
+                  <tr><td>6</td><td>15</td><td>16000</td><td>TA-15C-16000-6S1P-EC5</td><td>$325.79</td><td>$325.79</td></tr>
+                  <tr><td>6</td><td>15</td><td>16000</td><td>TA-15C-16000-6S1P-AS150</td><td>$325.79</td><td>$325.79</td></tr>
+                  <tr><td>4</td><td>25</td><td>1000</td><td>TA-25C-10000-4S1P</td><td>$149.99</td><td>$149.99</td></tr>
+                  <tr><td>4</td><td>25</td><td>6750</td><td>TA-25C-6750-4S1P-XT90</td><td>$99.00</td><td>$99.00</td></tr>
+                  <tr><td>6</td><td>25</td><td>9000</td><td>TA-25C-9000-6S1P</td><td>$205.62</td><td>$205.62</td></tr>
+                  <tr><td>6</td><td>25</td><td>10000</td><td>TA-25C-10000-6S1P-AS150</td><td>$210.00</td><td>$210.00</td></tr>
+                  <tr><td>4</td><td>25</td><td>22000</td><td>TA-25C-22000-4S1P</td><td>$343.89</td><td>$343.89</td></tr>
+                  <tr><td>6</td><td>25</td><td>22000</td><td>TA-PLUS-25C-22000-6S1P-AS150</td><td>$461.89</td><td>$461.89</td></tr>
+                  <tr><td>6</td><td>25</td><td>22000</td><td>TA-25C-22000-6S1P-AS150</td><td>$461.89</td><td>$461.89</td></tr>
+                  <tr><td>6</td><td>35</td><td>6000</td><td>TA-35C-6000-6S1P-XT60</td><td>$129.99</td><td>$129.99</td></tr>
+                  <tr><td>4</td><td>35</td><td>6600</td><td>TA-35C-6600-4S2P-XT60</td><td>$95.00</td><td>$95.00</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="motors">
+              <h5>MOTORS</h5>
+              <p>Coming Soon!</p>
+            </div>
+            <div id="escs">
+              <h5>ESCS</h5>
+              <p>Coming Soon!</p>
+            </div>
+            <div id="propellers">
+              <h5>PROPELLERS</h5>
+              <p>Coming Soon!</p>
+            </div>
           </section>
         </li>
 
@@ -139,6 +157,7 @@
           focus("#order");
         });
         noFocus();
+        noCategory();
       });
 
       function noFocus() {
@@ -146,14 +165,35 @@
         divs.forEach(function(div) {
           $("" + div + "-blurb").hide();
         })
-        $("#home-blurb").show("fast");
+        $("#shop-blurb").show("fast");
       };
 
       function focus(focus) {
-        var divs = ["#home", "#shop", "#contact", "#order"]
+        var divs = ["#shop", "#contact", "#order"]
         $("" + focus + "-blurb").show("fast");
         divs.forEach(function(div) {
           if (div != focus) { $("" + div + "-blurb").hide(); }
+        })
+      };
+
+      function category(cat) {
+        noCategory();
+        $(cat).show("fast");
+      }
+
+      function noCategory() {
+        var divs = ["#tangoDrones",
+                    "#hamilton",
+                    "#eigen",
+                    "#hoodlum",
+                    "#hammer",
+                    "#batteries",
+                    "#motors",
+                    "#escs",
+                    "#propellers"
+                  ]
+        divs.forEach(function(div) {
+          $(div).hide();
         })
       };
     </script>
