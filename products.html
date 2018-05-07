@@ -5,16 +5,19 @@
     <title>Tango Drones</title>
     <link rel="stylesheet" href="assets/stylesheets/main.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Archivo+Black|Lato:400,100,300' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
   </head>
   <body>
     <header class="primary-nav container group">
       <h1 class="logo">
-        <a id='primary-header' href="index.html">TANGO DRONES</a>
+        <a id='primary-header' href="index.html">
+          <img src="assets/images/tangoLogo4.png"/>&nbsp;TANGO DRONES
+        </a>
       </h1>
       <div class='nav nav-options'>
-        <a id="shop" onclick="focus('shop')">Product List</a>
-        <a id="order" onclick="focus('order')">Order</a>
-        <a id="contact" onclick="focus('contact')">Contact</a>
+        <a class="link" id="shop" onclick="focus('shop')">Product List</a>
+        <a class="link" id="order" onclick="focus('order')">Order</a>
+        <a class="link" id="contact" onclick="focus('contact')">Contact</a>
       </div>
       </div class='nav-options'>
     </header>
@@ -24,7 +27,7 @@
           <section id='shop-blurb' class="hero blurb">
             <h5 class='blurb-title'>Online Ordering Coming Soon!</h5>
             <h4 class="blurb-text">In the meantime, find our product list below. Order via email to
-              <a style="font-weight: bold;" href="mailto:sales@tango-drones.com?Subject=TangoOrders" target="_top">
+              <a class="link" style="font-weight: bold;" href="mailto:sales@tango-drones.com?Subject=TangoOrders" target="_top">
                 sales@tango-drones.com</a>
             </h4>
             <span>
@@ -35,11 +38,15 @@
             <btn class="category-btn"><a style="font-weight: bold;" onclick="category('#propellers')">PROPELLERS</a></btn>
             </span>
             <div id="tangoDrones">
-              <h5>TANGO DRONES</h5>
+              <h2>TANGO DRONES</h2>
               <p>Coming Soon!</p>
+              <span><p>Hamilton
+              <p>Eigen</p>
+              <p>Hoodlum</p>
+              <p>Hammer</p></span>
             </div>
             <div id="batteries">
-              <h5>BATTERIES</h5>
+              <h2>BATTERIES</h2>
               <table>
                 <thead class='table-header'>
                   <tr>
@@ -77,15 +84,15 @@
               </table>
             </div>
             <div id="motors">
-              <h5>MOTORS</h5>
+              <h2>MOTORS</h2>
               <p>Coming Soon!</p>
             </div>
             <div id="escs">
-              <h5>ESCS</h5>
+              <h2>ESCS</h2>
               <p>Coming Soon!</p>
             </div>
             <div id="propellers">
-              <h5>PROPELLERS</h5>
+              <h2>PROPELLERS</h2>
               <p>Coming Soon!</p>
             </div>
           </section>
@@ -94,7 +101,7 @@
         <li>
           <section id='contact-blurb' class="hero blurb">
             <p>Church St, Decatur GA</p>
-            <p>Get in touch at <a class=""
+            <p>Get in touch at: <a class="link"
                                   href="mailto:sales@tango-drones.com?Subject=TangoOrders"
                                   target="_top">sales@tango-drones.com</a>
             </p>
@@ -137,7 +144,7 @@
     <footer class="primary-footer container group">
       <nav class="nav">
         <ul>
-          <li><a class="btn" href="mailto:sales@tango-drones.com?Subject=TangoInfo" target="_top">CONTACT US</a></li>
+          <li><a class="btn link" href="mailto:sales@tango-drones.com?Subject=TangoInfo" target="_top">CONTACT US</a></li>
         </ul>
       </nav>
     </footer>
